@@ -1,28 +1,36 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="ja">
   <meta charset="utf-8"/>
   <title>Markdown realtime preview editor</title>
-<body>
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-
-<div id="main" class="container">
-  <form id="editor">
-    <input type="text" name="title" class="input-block-level" id="title">
-    <textarea id="content" name="content" class="input-block-level"></textarea>
-  </form>
-
-  <div id="preview"></div>
-</div>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 
   <script src="./underscore-min.js"></script>
   <script src="./jquery-2.1.1.min.js"></script>
   <script src="./backbone.js"></script>
   <script src="./marked.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+<body>
+
+<!-- Latest compiled and minified CSS -->
+
+<div id="main" class="container">
+  <div class="row">
+    <div id="editor-pane" class="col-md-6">
+      <h1>Markdown</h1>
+      <form id="editor" style="height:80%">
+        <input type="text" name="title" class="input-block-level" id="title" style="width:100%">
+        <textarea id="content" name="content" class="input-block-level" style="width:100%" rows="25"></textarea>
+      </form>
+    </div>
+    <div id="preview-pane" class="col-md-6">
+      <h1>プレビュー</h1>
+      <div id="preview"></div>
+    </div>
+  </div>
+</div>
+
   <script src="./editor.js"></script>
 </body>
 </html>
