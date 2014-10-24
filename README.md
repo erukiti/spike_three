@@ -3,6 +3,8 @@ spike3
 
 Markdownをリアルタイム編集・リアルタイムプレビューするコードの実験
 
+https://erukiti.github.io/spike_three/
+
 機能(予定)
 ----------
 
